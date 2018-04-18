@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Comment CommentText="-- Methods of RequestTray are Substitutable at runtime&#xD;&#xA;-- floSupQuantity always greater than 0">
+    <Position X="4.417" Y="0.5" Height="0.75" Width="1.7" />
+  </Comment>
+  <Class Name="SupplyTray">
+    <Position X="4.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\BLL\SupplyTray.cs</FileName>
+      <NewMemberFileName>App_Code\BLL\RequestTray.cs</NewMemberFileName>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAhAAAAAAAIAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PMSApp.BusinessLogicLayer.SiteSetup">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\BLL\SiteSetup.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PMSApp.BusinessLogicLayer.SupplyTransactions">
+    <Position X="6.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>App_Code\BLL\SupplyTransactions.cs</FileName>
+      <HashCode>BAAgAAAAAAAAAAAAIAAAAAAAAAQAAEAAAACAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RequestTray">
+    <Position X="2.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\BLL\RequestTray.cs</FileName>
+      <HashCode>AAAEACgAAAAAAAQAAAAAIAAEAAAAQAAQIAAAgAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

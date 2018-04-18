@@ -1,0 +1,98 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="DefaultMaster.master.cs"
+    Inherits="PMSApp.DefaultMaster_Default" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="MasterHead" runat="server">
+    <title>Production Management System</title>
+    <link href="Css/PMSStyle.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="MasterPageForm" runat="server">
+        <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; height: 100%">
+            <tr>
+                <td align="left" valign="top">
+                    <div id="master_headertop">
+                        <div style="text-align: left">
+                            <table  cellpadding="0" cellspacing="0"  width="100%" >
+                                <tr class="header_back">
+                                    <td >&nbsp;
+                                        <asp:Label ID="lblCompanyName" CssClass="CompanyTitle" runat="server"></asp:Label></td>
+                                    <td align="right">
+                                        <asp:HyperLink ID="HomePageLink" runat="server" ImageUrl="~/Images/Panasonic_Logo.jpg"
+                                            NavigateUrl="~/" /></td>
+                               </tr>
+                                <tr>
+                                    <td class="nav_header" style="width: 100%" colspan="2">
+                                        <asp:LoginView ID="LoginView1" runat="server">
+                                            <LoggedInTemplate>
+                                                <div style="text-align: left">
+                                                    <table width="100%">
+                                                        <tr>
+                                                            <td>
+                                                                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <table cellpadding="0" cellspacing="0" border="0" class="dolphincontainer">
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <asp:SiteMapDataSource ID="SiteMapDataSource1" SiteMapProvider="XmlSiteMapProvider"
+                                                                                             ShowStartingNode="false" runat="server" />
+                                                                                        <asp:Menu  ID="mnuMainMenu"  OnMenuItemDataBound="mnuMainMenu_MenuItemDataBound" Orientation="Horizontal" CssClass="dolphinnav" runat="server"
+                                                                                            DataSourceID="SiteMapDataSource1">
+                                                                                            <StaticSelectedStyle CssClass="dolphinnavSelected" />
+                                                                                            <StaticMenuItemStyle CssClass="dolphinnavStaticMenuItemStyle" />
+                                                                                            <StaticMenuStyle CssClass="dolphinnavStaticMenuStyle" />
+                                                                                            <StaticHoverStyle CssClass="dolphinnavStaticHoverStyle" />
+                                                                                        </asp:Menu>
+                                                                                    </td>
+                                                                                    <td class="TabMenuSpacer">
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                        <td colspan="3">
+                                                                            User ID: <b><asp:LoginName ID="LoginName1" runat="server" /></b>
+                                                                            | &nbsp;<asp:LoginStatus ID="LoginStatus1" runat="server" />
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="2">
+                                                                            <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                                                                            </asp:SiteMapPath>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                </div>
+                                            </LoggedInTemplate>
+                                        </asp:LoginView>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="lgHeader1">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="100%" class="small_text">
+                        <tr>
+                            <td  >
+                                Developed and Maintained by Ranteq Technology Sdn. Bhd.
+                            </td>
+                            <td align="right"   >
+                                <strong>Date: </strong><asp:Label ID="lblMasterDate" runat="server"></asp:Label>
+                                    <strong>Time: </strong><asp:Label ID="lblMasterTime" runat="server"></asp:Label>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

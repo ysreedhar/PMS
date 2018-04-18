@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
+  <siteMapNode url="default.aspx" title="PMS-II Application"  description="" SecurityTrimmingEnabled="true">
+    <siteMapNode url="~/" title="Home"  roles="*" SecurityTrimmingEnabled="true"/>
+    <siteMapNode url="~/admin/Admin_default.aspx"  title="Admin"  description="Application Administration" SecurityTrimmingEnabled="true"	  >
+      <siteMapNode url="~/admin/CreateNewUser.aspx" title="Create New User"   description="Function Management"	 roles="Administration" imageUrl="~/Images/page.gif" SecurityTrimmingEnabled="true" />
+      <siteMapNode url="~/admin/RoleManager.aspx" title="Manage User Roles"   description="User Management"	 roles="Administration" imageUrl="~/Images/page.gif" SecurityTrimmingEnabled="true" />
+      <siteMapNode url="~/admin/UserLocationAccess.aspx" title="Manage User Locations"  description="Manage Location Access"	 roles="Administration" SecurityTrimmingEnabled="true" />
+      <siteMapNode url="~/admin/Settings.aspx" title="Manage Application Settings"  description="Application Settings Management"	 roles="Administration" SecurityTrimmingEnabled="true" />
+      <siteMapNode url="~/admin/NMItem_Master.aspx" title="Manage Non Mapics Items"  description="Non Mapics Items Management"	 roles="Administration" SecurityTrimmingEnabled="true" />
+       <siteMapNode url="~/admin/Messages.aspx" title="Manage System Messages"  description="System Messages Mgmt."	 roles="Administration" SecurityTrimmingEnabled="true"/>
+      <siteMapNode url="~/admin/DocumentFormatMaster.aspx" title="Manage Document Formats"  description="ISO Documentation"	 roles="Administration" SecurityTrimmingEnabled="true"/>
+     <siteMapNode url="~/admin/MshipMgmt.aspx" title="Manage Users"  description="Update Master Data"	 roles="Administration" SecurityTrimmingEnabled="true" />
+    </siteMapNode>
+    <siteMapNode url="~/Planning/default3.aspx" title="Planning"  description="Planning Module"	 roles="Planning" SecurityTrimmingEnabled="true"/>
+    <siteMapNode url="~/Execution/default3.aspx" title="Execution"  description="Execution Module"	 roles="Execution" SecurityTrimmingEnabled="true"/>
+    <siteMapNode url="~/ERS/Ers_default.aspx" title="E-Requisition and Supply"  description="E-Requisition Module"	 SecurityTrimmingEnabled="true" >
+      <siteMapNode url="~/ers/RequestItem.aspx" title="Issue Requisition"  description="Request Items"	 roles="ItemRequisition" SecurityTrimmingEnabled="true"/>
+      <siteMapNode url="~/ers/RequestABPItem.aspx" title="Issue Requisition (Accessory Buy Part)"  description="Request Accessory Items"	 roles="ABPItemRequisition" SecurityTrimmingEnabled="true"/>
+      <siteMapNode url="~/ers/ICSupply/ICSupplyR.aspx" title="Inventory Control Supply (With Requisition)"  description="Supply With Requisition"	 roles="InventoryControlSupply" SecurityTrimmingEnabled="true"/>
+      <siteMapNode url="~/ers/ICSupply/ICSupplyWR.aspx" title="Inventory Control Supply (Without Requisition)"  description="Supply Without Requisition"	 roles="InventoryControlSupply" SecurityTrimmingEnabled="true"/>
+      <siteMapNode url="~/ers/ICSupply/ICSupplySC.aspx" title="Inventory Control Supply (Sub-Con)"  description="Sub-Con Supply"	 roles="InventoryControlSupply" SecurityTrimmingEnabled="true"/>
+      <siteMapNode url="~/ers/SupplyLL.aspx" title="Line-Line Supply"  description="Supply Line-Line"	 roles="LineSupply" SecurityTrimmingEnabled="true"/>
+    </siteMapNode>
+    <siteMapNode url="~/Inquiry/Inquiry_Default.aspx" title="Inquiry"  description="Inquiry Module"	roles="Inquiry" SecurityTrimmingEnabled="true" >
+      <siteMapNode url="~/Inquiry/RequisitionInquiry.aspx" title="Requisition Inquiry"  description="Requisition Status"	roles="Inquiry" SecurityTrimmingEnabled="true"/>
+      <siteMapNode url="~/Inquiry/SupplyInquiry.aspx" title="Supply Inquiry"   description="Supply Status"	 roles="Inquiry" SecurityTrimmingEnabled="true"/>
+    </siteMapNode>
+    <siteMapNode url="~/Help.aspx" title="Help" target ="_blank" roles="*"/>
+  </siteMapNode>
+</siteMap>

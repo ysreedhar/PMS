@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Books>
+  <Book ID="default">
+    <Author>Mark</Author>
+    <Publisher>Sams</Publisher>
+  </Book>
+  <Book ID="002">
+    <Author>Joe</Author>
+    <Publisher>AWL</Publisher>
+  </Book>
+</Books>

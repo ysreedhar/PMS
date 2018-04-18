@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<SiteSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SiteIsOnline>true</SiteIsOnline>
+  <ImplementsTUAIP>false</ImplementsTUAIP>
+  <CompanyName>Panasonic Refrigeration Devices Malaysia Sdn Bhd.</CompanyName>
+  <DateFormat>{0:yyyy/MM/dd}</DateFormat>
+  <ApplicationName>PMS - II Intranet Application</ApplicationName>
+  <SiteEmailAddress>pmsadmin@sg.panasonic.com</SiteEmailAddress>
+  <InvControlWarehouse>1</InvControlWarehouse>
+  <InvControlLocation>43541</InvControlLocation>
+  <PurchasingWarehouse>1</PurchasingWarehouse>
+  <PurchasingLocation>43541</PurchasingLocation>
+</SiteSettings>
